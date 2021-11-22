@@ -29,6 +29,13 @@ objectives:
     warning:
       - criteria:
           - "<=600"
+      - sli: response_bootstrap_90P
+    pass:
+      - criteria:
+          - "<=600"
+    warning:
+      - criteria:
+          - "<=500"
 total_score:
   pass: "90%"
   warning: "75%"
