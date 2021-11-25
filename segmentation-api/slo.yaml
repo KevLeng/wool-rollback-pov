@@ -29,13 +29,9 @@ objectives:
     warning:
       - criteria:
           - "<=600"
-      - sli: response_bootstrap_90P
-    pass:
-      - criteria:
-          - "<=600"
-    warning:
-      - criteria:
-          - "<=500"
+      - sli: KR_segmentation_singlerule_90p
+      - sli: KR_segmentation_multirules_90p
+
 total_score:
   pass: "90%"
   warning: "75%"
