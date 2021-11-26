@@ -2,7 +2,7 @@
 spec_version: '0.1.0'
 comparison:
   compare_with: "single_result"
-  include_result_with_score: "pass"
+  include_result_with_score: "warning"
   aggregate_function: avg
 objectives:
   - sli: response_time_p95
