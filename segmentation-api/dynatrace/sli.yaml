@@ -1,4 +1,4 @@
 ---
 spec_version: '1.0'
 indicators:
-  sv_response_time_single_p90: MV2;MicroSecond;metricSelector=builtin:service.keyRequest.response.server:filter(and(in("dt.entity.service_method",entitySelector("type(service_method),entityName(~"PT-/api/v1/Rules/ids~")")))):splitBy():percentile(90)
+    sv_response_time_single_p90: MV2;MicroSecond;metricSelector=builtin:service.keyRequest.response.server:filter(and(in("dt.entity.service_method",entitySelector("type(service_method),entityName(~"PT-/api/v1/Rules/ids~")")))):splitBy():percentile(90)
