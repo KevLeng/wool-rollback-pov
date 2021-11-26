@@ -30,7 +30,7 @@ import uuid
 PROD_MODE = True
 
 # DEBUG mode enables extra logging
-DEBUG = False
+DEBUG = True
 
 # Cloud Automation runs in UTC
 # So times come in as UTC
