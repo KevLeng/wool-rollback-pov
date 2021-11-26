@@ -21,7 +21,7 @@ import uuid
 # --timeframe=24h ^
 # --labels=RunBy=Adam,Please=Ignore,DTEnv=https://abc12345.live.dynatrace.com,Dashboard=12345678-abcd-1234-abcd-1234abcd1234
 
-#print(os.environ)
+print(os.environ)
 #exit()
 
 # CONFIGURABLE PARAMETERS START
