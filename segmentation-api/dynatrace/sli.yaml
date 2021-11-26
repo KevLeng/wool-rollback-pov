@@ -10,4 +10,4 @@ indicators:
   sv_cpu_container_avg: "metricSelector=builtin:containers.cpu.usagePercent:filter(and(eq(Container,segmentation-api))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)"
   sv_memory_container_p90: "metricSelector=builtin:containers.memory.usagePercent:filter(and(eq(Container,segmentation-api))):splitBy():percentile(90):auto:sort(value(percentile(90),descending)):limit(10)"
   sv_memory_container_avg: "metricSelector=builtin:containers.memory.usagePercent:filter(and(eq(Container,segmentation-api))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)"
-  sv_response_time_single_p90: "MV2;MicroSecond;metricSelector=builtin:service.keyRequest.response.server:percentile(90):names:parents:filter(eq("dt.entity.service",SERVICE-85EEE9AC2700274F));entitySelector=type(SERVICE_METHOD),entityName.equals(PT-/api/v1/Rules/SingleRequestID)"
+  sv_response_time_single_p90: "MV2;MicroSecond;metricSelector=builtin:service.response.time:merge(dt.entity.service_method):percentile(90)&entitySelector=type(service_method),entityName(~"PT-/api/v1/Rules/ids~")"
