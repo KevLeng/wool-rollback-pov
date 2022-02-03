@@ -23,17 +23,17 @@ objectives:
   - sli: response_time_p50
     pass:
       - criteria:
-          - "<=500"
+          - "<=55"
     warning:
       - criteria:
-          - "<=600"
+          - "<=66"
   - sli: response_time_p90
     pass:
       - criteria:
-          - "<=500"
+          - "<=100"
     warning:
       - criteria:
-          - "<=600"
+          - "<=120"
   - sli: sv_response_time_email_p90
     pass:
       - criteria:
