@@ -8,10 +8,10 @@ objectives:
   - sli: response_time_p95
     pass:
       - criteria:
-          - "<=200"
+          - "<=400"
     warning:
       - criteria:
-          - "<=250"
+          - "<=500"
   - sli: throughput
   - sli: error_rate
     pass:
@@ -23,17 +23,17 @@ objectives:
   - sli: response_time_p50
     pass:
       - criteria:
-          - "<=55"
-    warning:
-      - criteria:
-          - "<=66"
-  - sli: response_time_p90
-    pass:
-      - criteria:
           - "<=100"
     warning:
       - criteria:
-          - "<=120"
+          - "<=125"
+  - sli: response_time_p90
+    pass:
+      - criteria:
+          - "<=150"
+    warning:
+      - criteria:
+          - "<=200"
   - sli: sv_response_time_email_p90
     pass:
       - criteria:
